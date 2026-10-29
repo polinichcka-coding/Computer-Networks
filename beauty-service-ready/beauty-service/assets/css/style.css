@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #222;
+}
+
+.site-header {
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.site-nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.brand {
+    font-weight: bold;
+}
+
+.nav-links,
+.nav-account {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-account {
+    margin-left: auto;
+}
+
+a {
+    color: #333;
+}
+
+main {
+    max-width: 1000px;
+    min-height: 75vh;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.card,
+.panel {
+    padding: 18px;
+    background: white;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+form {
+    max-width: 550px;
+}
+
+label {
+    display: block;
+    margin: 12px 0 5px;
+}
+
+input:not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+}
+
+textarea {
+    min-height: 90px;
+}
+
+button,
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 9px 14px;
+    border: 0;
+    border-radius: 3px;
+    background: #444;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.danger,
+.btn.danger {
+    background: #a33;
+}
+
+.btn.light {
+    background: #777;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.actions form {
+    margin: 0;
+}
+
+.msg {
+    padding: 12px;
+    background: #e6f3e6;
+}
+
+.error {
+    background: #f9dddd;
+}
+
+.muted {
+    color: #666;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+}
