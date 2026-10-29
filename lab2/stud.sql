@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS stud CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE stud;
+CREATE TABLE IF NOT EXISTS polina_sevastianova_lab (
+  id INT(5) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  created DATETIME NOT NULL,
+  ip VARCHAR(20) NOT NULL,
+  studentname VARCHAR(50) NOT NULL,
+  email VARCHAR(50) NOT NULL,
+  message TEXT NOT NULL
+);
